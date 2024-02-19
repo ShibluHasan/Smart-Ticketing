@@ -3,31 +3,31 @@
 
 
 
-var total_sit_calculation = 40;
+let total_sit_calculation = 8;
 
-var total_sit_selected_value = 0;
-var total_taka = 0;
-var Total_amound_display = document.getElementById("Total_amound_display");
-var total_sit_selected = document.getElementById("total_sit_selected");
-var frist_data = document.getElementById("total_sit");
-var C1_i = 0;
-var C2_i = 0;
-var C3_i = 0;
-var C4_i = 0;
-var D1_i = 0;
-var D2_i = 0;
-var D3_i = 0;
-var D4_i = 0;
-var max_sit = 0;
+let total_sit_selected_value = 0;
+let total_taka = 0;
+let Total_amound_display = document.getElementById("Total_amound_display");
+let total_sit_selected = document.getElementById("total_sit_selected");
+let frist_data = document.getElementById("total_sit");
+let C1_i = 0;
+let C2_i = 0;
+let C3_i = 0;
+let C4_i = 0;
+let D1_i = 0;
+let D2_i = 0;
+let D3_i = 0;
+let D4_i = 0;
+let max_sit = 0;
 
 function C1() {
 
 
-    var C1_clour_sit = document.getElementById("C1_play");
+    let C1_clour_sit = document.getElementById("C1_play");
 
-    var C1_Display1 = document.getElementById("C1_Display1");
-    var C1_Display2 = document.getElementById("C1_Display2");
-    var C1_Display3 = document.getElementById("C1_Display3");
+    let C1_Display1 = document.getElementById("C1_Display1");
+    let C1_Display2 = document.getElementById("C1_Display2");
+    let C1_Display3 = document.getElementById("C1_Display3");
 
 
     if (C1_i == 0) {
@@ -35,7 +35,7 @@ function C1() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             C1_clour_sit.style.backgroundColor = "green";
@@ -54,7 +54,7 @@ function C1() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         C1_Display1.innerText = "";
@@ -78,11 +78,11 @@ function C1() {
 // C2
 function C2() {
 
-    var C2_clour_sit = document.getElementById("C2_play");
+    let C2_clour_sit = document.getElementById("C2_play");
 
-    var C2_Display1 = document.getElementById("C2_Display1");
-    var C2_Display2 = document.getElementById("C2_Display2");
-    var C2_Display3 = document.getElementById("C2_Display3");
+    let C2_Display1 = document.getElementById("C2_Display1");
+    let C2_Display2 = document.getElementById("C2_Display2");
+    let C2_Display3 = document.getElementById("C2_Display3");
 
 
 
@@ -92,7 +92,7 @@ function C2() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             C2_clour_sit.style.backgroundColor = "green";
@@ -111,7 +111,7 @@ function C2() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         C2_Display1.innerText = "";
@@ -133,10 +133,10 @@ function C2() {
 // C3
 function C3() {
 
-    var C3_clour_sit = document.getElementById("C3_play");
-    var C3_Display1 = document.getElementById("C3_Display1");
-    var C3_Display2 = document.getElementById("C3_Display2");
-    var C3_Display3 = document.getElementById("C3_Display3");
+    let C3_clour_sit = document.getElementById("C3_play");
+    let C3_Display1 = document.getElementById("C3_Display1");
+    let C3_Display2 = document.getElementById("C3_Display2");
+    let C3_Display3 = document.getElementById("C3_Display3");
 
 
 
@@ -146,7 +146,7 @@ function C3() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             C3_clour_sit.style.backgroundColor = "green";
@@ -165,7 +165,7 @@ function C3() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         C3_Display1.innerText = "";
@@ -185,11 +185,11 @@ function C3() {
 // C4
 function C4() {
 
-    var C4_clour_sit = document.getElementById("C4_play");
+    let C4_clour_sit = document.getElementById("C4_play");
 
-    var C4_Display1 = document.getElementById("C4_Display1");
-    var C4_Display2 = document.getElementById("C4_Display2");
-    var C4_Display3 = document.getElementById("C4_Display3");
+    let C4_Display1 = document.getElementById("C4_Display1");
+    let C4_Display2 = document.getElementById("C4_Display2");
+    let C4_Display3 = document.getElementById("C4_Display3");
 
 
 
@@ -199,7 +199,7 @@ function C4() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             C4_clour_sit.style.backgroundColor = "green";
@@ -218,7 +218,7 @@ function C4() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         C4_Display1.innerText = "";
@@ -242,11 +242,11 @@ function C4() {
 function D1() {
 
 
-    var D1_clour_sit = document.getElementById("D1_play");
+    let D1_clour_sit = document.getElementById("D1_play");
 
-    var D1_Display1 = document.getElementById("D1_Display1");
-    var D1_Display2 = document.getElementById("D1_Display2");
-    var D1_Display3 = document.getElementById("D1_Display3");
+    let D1_Display1 = document.getElementById("D1_Display1");
+    let D1_Display2 = document.getElementById("D1_Display2");
+    let D1_Display3 = document.getElementById("D1_Display3");
 
 
     if (D1_i == 0) {
@@ -254,7 +254,7 @@ function D1() {
         if (max_sit < 4) {
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             D1_clour_sit.style.backgroundColor = "green";
@@ -273,7 +273,7 @@ function D1() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         D1_Display1.innerText = "";
@@ -294,11 +294,11 @@ function D1() {
 // D2
 function D2() {
 
-    var D2_clour_sit = document.getElementById("D2_play");
+    let D2_clour_sit = document.getElementById("D2_play");
 
-    var D2_Display1 = document.getElementById("D2_Display1");
-    var D2_Display2 = document.getElementById("D2_Display2");
-    var D2_Display3 = document.getElementById("D2_Display3");
+    let D2_Display1 = document.getElementById("D2_Display1");
+    let D2_Display2 = document.getElementById("D2_Display2");
+    let D2_Display3 = document.getElementById("D2_Display3");
 
 
 
@@ -308,7 +308,7 @@ function D2() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             D2_clour_sit.style.backgroundColor = "green";
@@ -327,7 +327,7 @@ function D2() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         D2_Display1.innerText = "";
@@ -349,10 +349,10 @@ function D2() {
 // D3
 function D3() {
 
-    var D3_clour_sit = document.getElementById("D3_play");
-    var D3_Display1 = document.getElementById("D3_Display1");
-    var D3_Display2 = document.getElementById("D3_Display2");
-    var D3_Display3 = document.getElementById("D3_Display3");
+    let D3_clour_sit = document.getElementById("D3_play");
+    let D3_Display1 = document.getElementById("D3_Display1");
+    let D3_Display2 = document.getElementById("D3_Display2");
+    let D3_Display3 = document.getElementById("D3_Display3");
 
 
 
@@ -362,7 +362,7 @@ function D3() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             D3_clour_sit.style.backgroundColor = "green";
@@ -381,7 +381,7 @@ function D3() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         D3_Display1.innerText = "";
@@ -402,11 +402,11 @@ function D3() {
 // D4
 function D4() {
 
-    const D4_clour_sit = document.getElementById("D4_play");
+    let D4_clour_sit = document.getElementById("D4_play");
 
-    const D4_Display1 = document.getElementById("D4_Display1");
-    const D4_Display2 = document.getElementById("D4_Display2");
-    const D4_Display3 = document.getElementById("D4_Display3");
+    let D4_Display1 = document.getElementById("D4_Display1");
+    let D4_Display2 = document.getElementById("D4_Display2");
+    let D4_Display3 = document.getElementById("D4_Display3");
 
 
 
@@ -416,7 +416,7 @@ function D4() {
 
             total_sit_calculation = total_sit_calculation - 1;
 
-            frist_data.innerText = total_sit_calculation + " Sec Left";
+            frist_data.innerText = total_sit_calculation + " Seats Left";
 
 
             D4_clour_sit.style.backgroundColor = "green";
@@ -435,7 +435,7 @@ function D4() {
     else {
         total_sit_calculation = total_sit_calculation + 1;
 
-        frist_data.innerText = total_sit_calculation + " Sec Left";
+        frist_data.innerText = total_sit_calculation + " Seats Left";
         total_sit_selected_value = total_sit_selected_value - 1;
         total_sit_selected.innerText = "Seat " + total_sit_selected_value;
         D4_Display1.innerText = "";
@@ -465,13 +465,13 @@ let isapplied = true;
 
 function coponapply() {
 
-    var input_copun = document.getElementById("input_copun").value;
-    var couponDiv = document.getElementById("couponDiv");
-    var token_Totalprice_display = document.getElementById("token_Totalprice_display");
-    var offerprice = total_taka - (total_taka * 15) / 100;
-    var offerprice20 = total_taka - (total_taka * 20) / 100;
+    let input_copun = document.getElementById("input_copun").value;
+    let couponDiv = document.getElementById("couponDiv");
+    let token_Totalprice_display = document.getElementById("token_Totalprice_display");
+    let offerprice = total_taka - (total_taka * 15) / 100;
+    let offerprice20 = total_taka - (total_taka * 20) / 100;
 
-    if (input_copun == "NEW 15") {
+    if (input_copun == "NEW15") {
         token_Totalprice_display.innerText = "BDT " + offerprice;
     }
     if (input_copun == "Couple 20") {
@@ -482,12 +482,12 @@ function coponapply() {
 }
 
 function handleNext() {
-    var modal = document.getElementById("modal");
+    let modal = document.getElementById("modal");
     modal.style.display = "block";
 }
 
 function handleContinue() {
-    var modal = document.getElementById("modal");
+    let modal = document.getElementById("modal");
     modal.style.display = "none";
 }
 
