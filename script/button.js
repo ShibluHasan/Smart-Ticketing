@@ -1,6 +1,6 @@
 
 
-//
+
 
 
 var total_sit_calculation = 40;
@@ -38,7 +38,7 @@ function C1() {
             frist_data.innerText = total_sit_calculation + " Sec Left";
 
 
-            C1_clour_sit.style.backgroundColor = "pink";
+            C1_clour_sit.style.backgroundColor = "green";
             total_sit_selected_value = total_sit_selected_value + 1;
             total_sit_selected.innerText = "Seat " + total_sit_selected_value;
             C1_Display1.innerText = "C1";
@@ -66,7 +66,7 @@ function C1() {
         max_sit = max_sit - 1;
 
         C1_i = C1_i - 1;
-        C1_clour_sit.style.backgroundColor = "blue";
+        C1_clour_sit.style.backgroundColor = "gray";
 
     }
 }
@@ -95,7 +95,7 @@ function C2() {
             frist_data.innerText = total_sit_calculation + " Sec Left";
 
 
-            C2_clour_sit.style.backgroundColor = "pink";
+            C2_clour_sit.style.backgroundColor = "green";
             total_sit_selected_value = total_sit_selected_value + 1;
             total_sit_selected.innerText = "Seat " + total_sit_selected_value;
             C2_Display1.innerText = "C2";
@@ -123,7 +123,7 @@ function C2() {
 
         max_sit = max_sit - 1;
         C2_i = C2_i - 1;
-        C2_clour_sit.style.backgroundColor = "blue";
+        C2_clour_sit.style.backgroundColor = "gray";
 
     }
 }
@@ -149,7 +149,7 @@ function C3() {
             frist_data.innerText = total_sit_calculation + " Sec Left";
 
 
-            C3_clour_sit.style.backgroundColor = "pink";
+            C3_clour_sit.style.backgroundColor = "green";
             total_sit_selected_value = total_sit_selected_value + 1;
             total_sit_selected.innerText = "Seat " + total_sit_selected_value;
             C3_Display1.innerText = "C3";
@@ -177,7 +177,7 @@ function C3() {
         max_sit = max_sit - 1;
 
         C3_i = C3_i - 1;
-        C3_clour_sit.style.backgroundColor = "blue";
+        C3_clour_sit.style.backgroundColor = "gray";
 
     }
 }
@@ -202,7 +202,7 @@ function C4() {
             frist_data.innerText = total_sit_calculation + " Sec Left";
 
 
-            C4_clour_sit.style.backgroundColor = "pink";
+            C4_clour_sit.style.backgroundColor = "green";
             total_sit_selected_value = total_sit_selected_value + 1;
             total_sit_selected.innerText = "Seat " + total_sit_selected_value;
             C4_Display1.innerText = "C4";
@@ -464,7 +464,7 @@ let isapplied = true;
 
 
 function coponapply() {
-    
+
     var input_copun = document.getElementById("input_copun").value;
     var couponDiv = document.getElementById("couponDiv");
     var token_Totalprice_display = document.getElementById("token_Totalprice_display");
@@ -481,6 +481,13 @@ function coponapply() {
     couponDiv.style.display = "none";
 }
 
+function handleNext() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+}
 
-
+function handleContinue() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
 

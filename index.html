@@ -55,9 +55,11 @@
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-2">
-                    <p class="font-semibold text-[#1DD100]">Bus</p>
-                    <img src="images/bus-icon.png" alt="">
+                <div class="navbar-end gap-2 ">
+                    <button class="bg-green-300 flex gap-1 border-2 p-1 rounded-xl">
+                        <p class="font-semibold text-[#1DD100] ">Bus</p>
+                        <img src="images/bus-icon.png" alt="">
+                    </button>
                 </div>
             </div>
 
@@ -129,13 +131,12 @@
 
             </div>
 
-            <div class="justify-center"><button
-                    class="border-2 bg-[#1DD100] w-full mx-80  p-2 rounded-2xl font-semibold">See All Offers</button>
-            </div>
+
 
         </div>
 
-
+        <button class="border-2 my-6 px-5 block mx-auto py-2  bg-[#1DD100] text-white font-semibold rounded-2xl">See All
+            Offers</button>
 
 
     </header>
@@ -171,10 +172,10 @@
                                 </div>
                             </div>
 
-                            <div class="flex gap-2 border-2 pt-3 px-1 rounded-2xl bg-green-300 ">
+                            <div class="flex gap-2 border-2 pt-3 px-2 rounded-2xl bg-green-300 ">
                                 <div><img src="images/seat-green-filled.png" alt=""></div>
                                 <div class="">
-                                    <p id="total_sit" class="font-medium text-[#1DD100]">40 Seats Left</p>
+                                    <p id="total_sit" class="font-semibold text-[#1DD100] pt-1">40 Seats Left</p>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +233,26 @@
 
 
         <section>
-            <div class="grid grid-cols-2 my-12 bg-[#FFFFFF] border-2 p-12 rounded-2xl gap-6">
+
+            <div class="grid grid-cols-2 my-12 bg-[#FFFFFF] border-2 p-12 rounded-2xl gap-6 relative">
+
+                <div id="modal"
+                    class="absolute bg-gray-200 w-[500px] h-[300px] rounded top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 hidden rounded-2xl">
+                    <div>
+                        <img src="/images/success.png" alt="" class="h-12 w-12 mx-auto">
+                        <h1 class="text-[#1DD100] py-1 text-center">Success</h1>
+                    </div>
+                    <div>
+                        <h1 class="pt-4 text-center"><span class="font-semibold">Thank you for Booking Our Bus Seats.
+                                We are working hard to find the best service and deals for you.</span> <br>
+                            Shortly you will find a confirmation in your email.</h1>
+                        <button onclick="handleContinue()"
+                            class="border-2 my-6 px-5 block mx-auto py-2  bg-[#1DD100] text-white font-semibold rounded-2xl">Continue</button>
+                    </div>
+                </div>
+
+
+
                 <div class="text-center lg:text-left">
                     <h3 class="font-semibold pb-4">Select Your Seat</h3>
                     <hr>
@@ -247,33 +267,36 @@
                         </div>
                     </div>
 
-
+                    <div class=""><img class="float-right mt-4  border-2 p-1 px-8 bg-gray-500 rounded-lg "
+                            src="images/wheel.png" alt=""></div>
                     <div class="my-4 pt-4">
 
-                        <div class="my-4">
+                        <div class="my-20">
+
                             <div class="grid grid-cols-5 my-4">
-                                <div>A</div>
-                                <div><button id="C1_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+
+                                <div class="font-semibold">C</div>
+                                <div><button id="C1_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="C1()">C1</button></div>
-                                <div><button id="C2_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div><button id="C2_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="C2()">C2</button></div>
-                                <div><button id="C3_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div><button id="C3_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="C3()">C3</button></div>
-                                <div><button id="C4_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div><button id="C4_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="C4()">C4</button></div>
 
 
                             </div>
 
                             <div class="grid grid-cols-5 my-4">
-                                <div>A</div>
-                                <div><button id="D1_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div class="font-semibold">D</div>
+                                <div><button id="D1_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="D1()">D1</button></div>
-                                <div><button id="D2_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div><button id="D2_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="D2()">D2</button></div>
-                                <div><button id="D3_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div><button id="D3_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="D3()">D3</button></div>
-                                <div><button id="D4_play" class="bg-gray-500  px-4 border-1 rounded-lg"
+                                <div><button id="D4_play" class="bg-gray-500  px-4 border-1 rounded-lg text-yellow-50"
                                         onclick="D4()">D4</button></div>
 
 
@@ -290,6 +313,9 @@
 
 
                 <div class="border-2 p-12 bg-[#F7F8F8] rounded-2xl">
+
+
+
                     <div class="">
                         <p class="font-semibold pb-2">Select Your Seat</p>
                         <hr>
@@ -400,16 +426,24 @@
                             </div>
                         </div>
 
+
+
+
+
+
+
+
+
                         <div id="couponDiv" class="flex justify-between mt-4">
 
                             <div><input type="text" id="input_copun" class="p-2 bg-white rounded-lg"
                                     placeholder="Have any copupon "></div>
-                            <div><button class="border-2 solid bg-[#1DD100] rounded-lg p-1 text-white"
-                                    onclick="coponapply()">APPLY</button></div>
+                            <div><button class="border-2 solid bg-[#1DD100] rounded-lg p-1 px-3 text-white"
+                                    onclick="coponapply()">Apply</button></div>
                         </div>
 
 
-                        
+
 
                         <div class="flex justify-between mt-4">
                             <div class="font-semibold">Grand Total</div>
@@ -422,9 +456,12 @@
 
                     </div>
 
-                    <button
+                    <button onclick="handleNext()"
                         class="border-2 my-12 px-20 py-2 w-full bg-[#1DD100] text-white font-semibold rounded-2xl">Next</button>
                 </div>
+
+
+
 
             </div>
         </section>
